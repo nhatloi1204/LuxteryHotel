@@ -1,0 +1,208 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta http-equiv='x-ua-compatible' content='ie=edge' />
+        <script async src='javascript/gtm.js'></script>
+        <script async src='javascript/gtm_1.js'></script>
+        <script>
+            //---------------------------------------------------------- //------ JAVASCRIPT HOOK FUNCTIONS FOR GRAVITY
+            FORMS ------- //---------------------------------------------------------- if (!gform) {
+            document.addEventListener('gform_main_scripts_loaded', function() { gform.scriptsLoaded = true; });
+            window.addEventListener('DOMContentLoaded', function() { gform.domLoaded = true; }); var gform = {
+            domLoaded: false, scriptsLoaded: false, initializeOnLoaded: function(fn) { if (gform.domLoaded &&
+            gform.scriptsLoaded) { fn(); } else if (!gform.domLoaded && gform.scriptsLoaded) {
+            window.addEventListener('DOMContentLoaded', fn); } else {
+            document.addEventListener('gform_main_scripts_loaded', fn); } }, hooks: { action: {}, filter: {} },
+            addAction: function(action, callable, priority, tag) { gform.addHook('action', action, callable, priority,
+            tag); }, addFilter: function(action, callable, priority, tag) { gform.addHook('filter', action, callable,
+            priority, tag); }, doAction: function(action) { gform.doHook('action', action, arguments); }, applyFilters:
+            function(action) { return gform.doHook('filter', action, arguments); }, removeAction: function(action, tag)
+            { gform.removeHook('action', action, tag); }, removeFilter: function(action, priority, tag) {
+            gform.removeHook('filter', action, priority, tag); }, addHook: function(hookType, action, callable,
+            priority, tag) { if (undefined == gform.hooks[hookType][action]) { gform.hooks[hookType][action] = []; } var
+            hooks = gform.hooks[hookType][action]; if (undefined == tag) { tag = action + '_' + hooks.length; } if
+            (priority == undefined) { priority = 10; } gform.hooks[hookType][action].push({ tag: tag, callable:
+            callable, priority: priority }); }, doHook: function(hookType, action, args) { // splice args from object
+            into array and remove first index which is the hook name args = Array.prototype.slice.call(args, 1); if
+            (undefined != gform.hooks[hookType][action]) { var hooks = gform.hooks[hookType][action], hook; //sort by
+            priority hooks.sort(function(a, b) { return a["priority"] - b["priority"] });
+            hooks.forEach(function(hookItem) { hook = hookItem.callable; if (typeof hook != 'function') hook =
+            window[hook]; if ('action' == hookType) { hook.apply(null, args); } else { args[0] = hook.apply(null, args);
+            } }); } if ('filter' == hookType) { return args[0]; } }, removeHook: function(hookType, action, priority,
+            tag) { if (undefined != gform.hooks[hookType][action]) { var hooks = gform.hooks[hookType][action]; hooks =
+            hooks.filter(function(hook, index, arr) { var removeHook = (undefined == tag || tag == hook.tag) &&
+            (undefined == priority || priority == hook.priority); return !removeHook; }); gform.hooks[hookType][action]
+            = hooks; } } }; }
+        </script>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+        <script id='cookieyes' type='text/javascript' src='javascript/script.js'></script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j,
+            f); })(window, document, 'script', 'dataLayer', 'GTM-T33KZT9');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- This site is optimized with the Yoast SEO plugin v21.1 - https://yoast.com/wordpress/plugins/seo/ -->
+        <title>Khách sạn Luxtery, Đà Nẵng</title>
+        <meta
+            name='description'
+            content="Discover the Two MacDonnell Road Hong Kong's serviced apartments & hotel suites for your next stay in Central, Hong Kong."
+        />
+        <link rel='canonical' href='https://www.twomr.com.hk/' />
+        <meta property='og:locale' content='en_GB' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Two MacDonnell Road, Hong Kong: Apartment Hotel in Central Hong Kong' />
+        <meta
+            property='og:description'
+            content="Discover the Two MacDonnell Road Hong Kong's serviced apartments & hotel suites for your next stay in Central, Hong Kong."
+        />
+        <meta property='og:url' content='https://www.twomr.com.hk/' />
+        <meta property='og:site_name' content='Two MacDonnell Road' />
+        <meta property='article:publisher' content='https://www.facebook.com/twomrhk/' />
+        <meta property='article:modified_time' content='2023-08-18T06:38:40+00:00' />
+        <meta property='og:image' content='img/LansonPlace_TMR_Concierge-1600x1041.jpg.webp' />
+        <meta property='og:image:width' content='1600' />
+        <meta property='og:image:height' content='1041' />
+        <meta property='og:image:type' content='image/jpeg' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <script type='application/ld+json' class='yoast-schema-graph'>
+            { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.twomr.com.hk/",
+            "url": "https://www.twomr.com.hk/", "name": "Two MacDonnell Road, Hong Kong: Apartment Hotel in Central Hong
+            Kong", "isPartOf": { "@id": "https://www.twomr.com.hk/tc/#website" }, "about": { "@id":
+            "https://www.twomr.com.hk/tc/#organization" }, "primaryImageOfPage": { "@id":
+            "https://www.twomr.com.hk/#primaryimage" }, "image": { "@id": "https://www.twomr.com.hk/#primaryimage" },
+            "thumbnailUrl": "https://s35891.pcdn.co/wp-content/uploads/sites/5/LansonPlace_TMR_Concierge.jpg.webp",
+            "datePublished": "2021-03-25T08:16:27+00:00", "dateModified": "2023-08-18T06:38:40+00:00", "description":
+            "Discover the Two MacDonnell Road Hong Kong's serviced apartments & hotel suites for your next stay in
+            Central, Hong Kong.", "breadcrumb": { "@id": "https://www.twomr.com.hk/#breadcrumb" }, "inLanguage":
+            "en-GB", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.twomr.com.hk/"] }] }, {
+            "@type": "ImageObject", "inLanguage": "en-GB", "@id": "https://www.twomr.com.hk/#primaryimage", "url":
+            "https://s35891.pcdn.co/wp-content/uploads/sites/5/LansonPlace_TMR_Concierge.jpg.webp", "contentUrl":
+            "https://s35891.pcdn.co/wp-content/uploads/sites/5/LansonPlace_TMR_Concierge.jpg.webp", "width": 2400,
+            "height": 1561 }, { "@type": "BreadcrumbList", "@id": "https://www.twomr.com.hk/#breadcrumb",
+            "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home" }] }, { "@type": "WebSite", "@id":
+            "https://www.twomr.com.hk/tc/#website", "url": "https://www.twomr.com.hk/tc/", "name": "Two MacDonnell
+            Road", "description": "", "publisher": { "@id": "https://www.twomr.com.hk/tc/#organization" },
+            "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate":
+            "https://www.twomr.com.hk/tc/?s={search_term_string}" }, "query-input": "required name=search_term_string"
+            }], "inLanguage": "en-GB" }, { "@type": ["Organization", "Place", "Hotel"], "@id":
+            "https://www.twomr.com.hk/tc/#organization", "name": "Two MacDonnell Road, Hong Kong", "url":
+            "https://www.twomr.com.hk/tc/", "logo": { "@id": "https://www.twomr.com.hk/#local-main-organization-logo" },
+            "image": { "@id": "https://www.twomr.com.hk/#local-main-organization-logo" }, "sameAs":
+            ["https://www.facebook.com/twomrhk/"], "address": { "@id":
+            "https://www.twomr.com.hk/#local-main-place-address" }, "geo": { "@type": "GeoCoordinates", "latitude":
+            "22.276351603123903", "longitude": "114.15564530029825" }, "telephone": ["2132 2132"],
+            "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday",
+            "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59" } }, {
+            "@type": "PostalAddress", "@id": "https://www.twomr.com.hk/#local-main-place-address", "streetAddress": "2
+            MacDonnell Road, Mid-levels, Hong Kong", "addressLocality": "Hong Kong", "postalCode": "999077",
+            "addressCountry": "HK" }, { "@type": "ImageObject", "inLanguage": "en-GB", "@id":
+            "https://www.twomr.com.hk/#local-main-organization-logo", "url": "", "contentUrl": "", "caption": "Two
+            MacDonnell Road, Hong Kong" }] }
+        </script>
+        <meta name='geo.placename' content='Hong Kong' />
+        <meta name='geo.position' content='22.276351603123903;114.15564530029825' />
+        <meta name='geo.region' content='Hong Kong' />
+        <!-- / Yoast SEO plugin. -->
+
+        <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+        <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+        <link rel='dns-prefetch' href='//api.tiles.mapbox.com' />
+        <link
+            rel='alternate'
+            type='application/rss+xml'
+            title='Two MacDonnell Road » Feed'
+            href='https://www.twomr.com.hk/feed/'
+        />
+        <link
+            rel='alternate'
+            type='application/rss+xml'
+            title='Two MacDonnell Road » Comments Feed'
+            href='https://www.twomr.com.hk/comments/feed/'
+        />
+        <link rel='stylesheet' id='client-blocks-css' href='css/client-blocks.css' media='all' />
+        <link rel='stylesheet' id='mapbox-gl-css' href='css/mapbox-gl.css' media='all' />
+        <link rel='stylesheet' id='slick-css' href='css/slick.min.css' media='all' />
+        <link rel='stylesheet' id='vue-mapbox-css' href='css/vue-mapbox.css' media='all' />
+        <style id='classic-theme-styles-inline-css'>
+            /** * These rules are needed for backwards compatibility. * They should match the button element rules in
+            the base theme.json file. */ .wp-block-button__link { color: #ffffff; background-color: #32373c;
+            border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill
+            shape. */ /* This needs a low specificity so it won't override the rules from the button element if defined
+            in theme.json. */ box-shadow: none; text-decoration: none; /* The extra 2px are added to size solids the
+            same as the outline versions.*/ padding: calc(0.667em + 2px) calc(1.333em + 2px); font-size: 1.125em; }
+            .wp-block-file__button { background: #32373c; color: #ffffff; text-decoration: none; }
+        </style>
+        <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' media='all' />
+        <link rel='stylesheet' id='trp-language-switcher-style-css' href='css/trp-language-switcher.css' media='all' />
+        <link rel='stylesheet' id='lanson-med-css' href='css/style.css' media='all' />
+        <link rel='stylesheet' id='client-theme-css' href='css/style_1.css' media='all' />
+        <link rel='stylesheet' id='client-theme-print-css' href='css/print.css' media='print' />
+        <script src='javascript/jquery.js' id='jquery-core-js'></script>
+        <script src='javascript/jquery-migrate.js' id='jquery-migrate-js'></script>
+
+        <!-- Google Analytics snippet added by Site Kit -->
+        <script src='https://www.googletagmanager.com/gtag/js?id=UA-30450272-1' id='google_gtagjs-js' async></script>
+        <script id='google_gtagjs-js-after'>
+            window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('set',
+            'linker', { "domains": ["www.twomr.com.hk"] }); gtag("js", new Date()); gtag("set", "developer_id.dZTNiMT",
+            true); gtag("config", "UA-30450272-1", { "anonymize_ip": true }); gtag("config", "GT-PL3RWN8");
+        </script>
+
+        <!-- End Google Analytics snippet added by Site Kit -->
+        <link rel='https://api.w.org/' href='https://www.twomr.com.hk/wp-json/' />
+        <link rel='alternate' type='application/json' href='https://www.twomr.com.hk/wp-json/wp/v2/pages/41' />
+        <link rel='EditURI' type='application/rsd+xml' title='RSD' href='https://www.twomr.com.hk/xmlrpc.php?rsd' />
+        <link rel='shortlink' href='https://www.twomr.com.hk/' />
+        <link
+            rel='alternate'
+            type='application/json+oembed'
+            href='https://www.twomr.com.hk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.twomr.com.hk%2F'
+        />
+        <link
+            rel='alternate'
+            type='text/xml+oembed'
+            href='https://www.twomr.com.hk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.twomr.com.hk%2F&format=xml'
+        />
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j,
+            f); })(window, document, 'script', 'dataLayer', 'GTM-5ZPL8WB');
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta name='google-site-verification' content='bG36FBT5IHb_XbloBs6_aVECiEqR-_aKK1Ms-8V-xuQ' />
+        <meta name='generator' content='Site Kit by Google 1.108.0' />
+        <link rel='alternate' hreflang='en-GB' href='https://www.twomr.com.hk/' />
+        <link rel='alternate' hreflang='zh-HK' href='https://www.twomr.com.hk/tc/' />
+        <link rel='alternate' hreflang='zh-CN' href='https://www.twomr.com.hk/sc/' />
+        <link rel='alternate' hreflang='en' href='https://www.twomr.com.hk/' />
+        <link rel='alternate' hreflang='zh' href='https://www.twomr.com.hk/tc/' />
+        <link rel='apple-touch-icon' sizes='180x180' href='img/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='img/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='img/favicon-16x16.png' />
+        <link rel='manifest' href='/wp-content/uploads/sites/5/fbrfg/site.webmanifest' />
+        <link rel='mask-icon' href='fonts/safari-pinned-tab.svg' color='#000000' />
+        <link rel='shortcut icon' href='img/logo.png' />
+        <meta name='msapplication-TileColor' content='#000000' />
+        <meta
+            name='msapplication-config'
+            content='https://s35891.pcdn.co/wp-content/uploads/sites/5/fbrfg/browserconfig.xml'
+        />
+        <meta name='theme-color' content='#ffffff' />
+        <link rel='alternate' hreflang='x-default' href='https://www.twomr.com.hk/' />
+        <style id='wp-custom-css'>
+            /* .cky-consent-container{ display:none; } */
+        </style>
+    </head>
+    <body>
+
+        {{{body}}}
+
+    </body>
+</html>
