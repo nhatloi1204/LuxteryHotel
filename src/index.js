@@ -19,7 +19,9 @@ app.set('views', path.join(__dirname, 'resources/views'));
 app.get('/', function (req, res) {
     res.render('home');
 });
-
+app.get('/intro',function  (req, res) {
+    res.render('intro');
+})
 app.get('/room', function (req, res) {
     res.render('room');
 });
