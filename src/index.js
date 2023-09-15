@@ -26,11 +26,28 @@ app.get('/room', function (req, res) {
     res.render('room');
 });
 app.get('/event', function (req, res) {
-    res.render('event');
+    const eventName = req.query.e;
+    if(eventName=='astra'){
+        res.render('astra');
+    }else if(eventName=='meeting'){
+        res.render('meeting');
+    }
+    else if(eventName=='ownway'){
+        res.render('ownway');
+    }else{
+        res.render('event');
+    }
+    
 });
 app.get('/dining', function (req, res) {
     res.render('dining');
 });
+app.get('/reviews',function(req,res){
+    res.render('reviews');
+})
+app.get('/facilities',function(req,res){
+    res.render('facilities')
+})
 
 app.listen(port, () => {
     console.log(`
