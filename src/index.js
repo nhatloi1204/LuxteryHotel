@@ -16,17 +16,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.render('home');
 });
-app.get('/intro', function(req, res) {
+app.get('/intro', function (req, res) {
     res.render('intro');
 });
-app.get('/room', function(req, res) {
+app.get('/room', function (req, res) {
     res.render('room');
 });
-app.get('/event', function(req, res) {
+app.get('/event', function (req, res) {
     res.render('event');
+});
+app.get('/dining', function (req, res) {
+    res.render('dining');
 });
 
 app.listen(port, () => {
