@@ -1,0 +1,28 @@
+{
+	"_comment": "Header",
+	"room":"Phòng",
+	"food":"Ẩm thực",
+	"event":"Sự kiện",
+	"offer":"Khuyến mãi",
+	"contact":"Liên hệ",
+	"booking_now":"Đặt phòng ngay",
+
+	"_comment": "Home",
+	"Booking": "Đặt phòng tại khách sạn Luxtery, Đà Nẵng",
+	"Booking_details":"Một khu đô thị tôn nghiêm hòa quyện sự yên bình của Đà Nẵng, gần Trung tâm Thành Phố và tầm nhìn rộng mở ra Bãi Biển Mỹ Khê và thành phố mang đến cuộc sống bên bờ biển dễ tiếp cận cho những du khách sành điệu.",
+	"Beautiful_View":"Khung cảnh đẹp nhất của thành phố",
+	"Beautiful_View_describe":"Tái khám phá cuộc sống vốn dĩ phải có với cuộc sống đô thị-biển đẹp nhất giữa những con đường quanh co, tươi tốt của Đà Nẵng. Cho dù bạn đang chạy bộ buổi sáng trên bãi biển Mỹ Khê lấp lánh, hòa mình vào cuộc sống về đêm của Trung tâm Thành phố hay hòa mình cùng những người thân yêu và những người hàng xóm thân thiết tại Astra Sky Lounge của chúng tôi, bạn sẽ luôn thấy mình bị cuốn hút về Khách sạn Luxtery, nơi nghỉ dưỡng của bạn. nhà xa nhà.",
+	"img1title":"Điều tuyệt vời nhất của cả hai thế giới",
+	"img1describe":"Các phòng được bài trí trang nhã với tầm nhìn ngoạn mục ra đường chân trời và bãi biển nổi tiếng của Đà Nẵng, nằm ở trung tâm của mọi hoạt động",
+	"img2title":"Không gian giao lưu & hòa nhập",
+	"img2describe":"Thư giãn với đồ uống hoặc bữa ăn bình thường, tổ chức các cuộc họp và sự kiện, tập thể dục hoặc đơn giản là thư giãn - tất cả trong một tòa nhà dành riêng cho đời sống xã hội sôi động",
+	"AstraCoffee":" khu vực chung, thậm chí cả hồ bơi trên sân thượng của chúng tôi -  đều có thể là không gian phòng khách và phòng ăn, văn phòng và phòng làm việc mở rộng của bạn, sau một ngày tuyệt vời khám phá và dù lịch bận rộn cùng gia đình và bạn bè ",
+
+	"_comment": "Footer",
+	"adr":"Địa chỉ",
+	"our_guest":"Dành cho khách hàng",
+	"our_room":"Phòng của chúng tôi",
+	"facilities":"Cơ sở vật chức & Dịch vụ",
+	"review":"Đánh giá",
+	"contact_footer":"Liên hệ chúng tôi"
+}
