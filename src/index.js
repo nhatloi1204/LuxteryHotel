@@ -49,6 +49,10 @@ app.get('/facilities',function(req,res){
     res.render('facilities')
 })
 
+app.get('/contact', function(req,res){
+    res.render('contact');
+})
+
 app.listen(port, () => {
     console.log(`
               Example app listening on http://localhost:${port}
