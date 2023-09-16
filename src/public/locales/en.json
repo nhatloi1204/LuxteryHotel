@@ -1,0 +1,30 @@
+{
+	"_comment": "Header",
+	"room":"Room",
+	"food":"Dining",
+	"event":"Event",
+	"offer":"Offer",
+	"contact":"Contact",
+	"booking_now":"Booking now",
+
+	"_comment": "Home",
+	"Booking": "Book your stay at Luxtery Hotel, Da Nang",
+	"Booking_details":"An urban sanctuary blending tranquillity of Da Nang, proximity to the City Centre, and expansive views of My Khe Beach and CBD affords accessible beach-side living for the discerning traveller.",
+	"Beautiful_View":"The City's Best View",
+	"Beautiful_View_describe":"Rediscover life as it should be with the best of urban-beach living amidst the lush, winding avenues of Da Nang. Whether doing your morning jog on the glistening beach of My Khe, dabbling in the night life of the City Centre, or mingling with love ones and extended neighbours on our Astra Sky Lounge , you’ll always find yourself drawn back to Luxtery Hotel, your home away from home.",
+	"img1title":"Best of Both Worlds",
+	"img1describe":"Tastefully furnished rooms with breath-taking views of Da Nang's famous skyline and beach, situated in the centre of all the action",
+	"img2title":"Best of Both Worlds",
+	"img2describe":"Chill out over a drink or casual meal, hold meetings and events, workout, or simply lounge – all on one bulding dedicated to vibrant social living",
+	"AstraCoffee":" communal areas, even our rooftop pool – social spaces double as your extended living and dining rooms, office and den, great for after a busy exploration day-out or having company over ",
+
+	"_comment": "Footer",
+	"adr":"Address",
+	"our_guest":"For Our Guests",
+	"our_room":"Our room",
+	"facilities":"Facilities & Services",
+	"review":"Reviews",
+	"contact_footer":"Contact us"
+
+	
+}

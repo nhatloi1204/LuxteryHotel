@@ -20,47 +20,57 @@
                     data-top-anchor="hero-image-content:bottom">
                     <div class="wrapper">
                         <div class="grid-x">
-
+                            <p>
+                                <a href="/change-lang/en">English</a> |
+                                <a href="/change-lang/vi">Tiếng Việt</a>
+                            </p>
                             <div class="cell shrink slot-logo">
                                 <a href="/"><span class="screen-reader-text">Lanson Place</span></a>
                                 <a href="/" rel="home"><span>Luxtery Hotel</span></a>
+
                             </div>
 
                             <nav class="cell auto slot-menu">
                                 <ul id="menu-main" class="dropdown menu">
                                     <li id="menu-item-127"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-127">
-                                        <a href="/room">Phòng</a>
+                                        <a href="/room">{{room}}</a>
                                         {{!-- <ul class="sub-menu">
                                             <li id="menu-item-131"
                                                 class="menu-item menu-item-type-post_type menu-item-object-suites menu-item-131">
                                                 <a href="https://www.twomr.com.hk/suites/garden-skyline-room/">Garden/Skyline
-                                                    Room</a></li>
+                                                    Room</a>
+                                            </li>
                                             <li id="menu-item-130"
                                                 class="menu-item menu-item-type-post_type menu-item-object-suites menu-item-130">
                                                 <a href="https://www.twomr.com.hk/suites/standard-superior-suite/">Standard/Superior
-                                                    Suite</a></li>
+                                                    Suite</a>
+                                            </li>
                                             <li id="menu-item-291"
                                                 class="menu-item menu-item-type-post_type menu-item-object-suites menu-item-291">
                                                 <a href="https://www.twomr.com.hk/suites/garden-skyline-suite/">Garden/Skyline
-                                                    Suite</a></li>
+                                                    Suite</a>
+                                            </li>
                                             <li id="menu-item-129"
                                                 class="menu-item menu-item-type-post_type menu-item-object-suites menu-item-129">
                                                 <a
                                                     href="https://www.twomr.com.hk/suites/garden-deluxe-skyline-deluxe-suite/">Garden
-                                                    Deluxe/Skyline Deluxe Suite</a></li>
+                                                    Deluxe/Skyline Deluxe Suite</a>
+                                            </li>
                                             <li id="menu-item-128"
                                                 class="menu-item menu-item-type-post_type menu-item-object-suites menu-item-128">
                                                 <a href="https://www.twomr.com.hk/suites/garden-skyline-apartment/">Garden/Skyline
-                                                    Apartment</a></li>
+                                                    Apartment</a>
+                                            </li>
                                         </ul> --}}
                                     </li>
                                     <li id="menu-item-724"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724">
-                                        <a href="/dining">Ẩm thực</a></li>
+                                        <a href="/dining">{{food}}</a>
+                                    </li>
                                     <li id="menu-item-132"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-132">
-                                        <a href="/event">Sự kiện</a>
+                                        <a href="/event">{{event}}</a>
                                         {{!-- <ul class="sub-menu">
                                             <li id="menu-item-293"
                                                 class="menu-item menu-item-type-post_type menu-item-object-meetings-events menu-item-293">
@@ -69,7 +79,8 @@
                                             <li id="menu-item-658"
                                                 class="menu-item menu-item-type-post_type menu-item-object-meetings-events menu-item-658">
                                                 <a href="https://www.twomr.com.hk/meetings-events/social-events/">Social
-                                                    Events</a></li>
+                                                    Events</a>
+                                            </li>
                                             <li id="menu-item-294"
                                                 class="menu-item menu-item-type-post_type menu-item-object-meetings-events menu-item-294">
                                                 <a
@@ -79,10 +90,11 @@
                                     </li>
                                     <li id="menu-item-176"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176">
-                                        <a href="/offer">Khuyến mãi</a></li>
+                                        <a href="/offer">{{offer}}</a>
+                                    </li>
                                     <li id="menu-item-136"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-136">
-                                        <a href="/contact">Liên hệ</a>
+                                        <a href="/contact">{{contact}}</a>
                                         {{!-- <ul class="sub-menu">
                                             <li id="menu-item-701"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701">
@@ -90,13 +102,15 @@
                                             </li>
                                             <li id="menu-item-137"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137">
-                                                <a href="https://www.twomr.com.hk/neighbourhood/">Neighbourhood</a></li>
+                                                <a href="https://www.twomr.com.hk/neighbourhood/">Neighbourhood</a>
+                                            </li>
                                             <li id="menu-item-138"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138">
-                                                <a href="https://www.twomr.com.hk/contact-us/">Get in Touch</a></li>
+                                                <a href="https://www.twomr.com.hk/contact-us/">Get in Touch</a>
+                                            </li>
                                         </ul> --}}
                                     </li>
-                                    
+
                                 </ul>
                             </nav>
 
@@ -105,18 +119,20 @@
                                     <li id="menu-item-734"
                                         class="zh_HK trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-734">
                                         <a href="https://www.twomr.com.hk/tc/"><span data-no-translation><span
-                                                    class="trp-ls-language-name">繁</span></span></a></li>
+                                                    class="trp-ls-language-name">繁</span></span></a>
+                                    </li>
                                     <li id="menu-item-902"
                                         class="zh_CN trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-902">
                                         <a href="https://www.twomr.com.hk/sc/"><span data-no-translation><span
-                                                    class="trp-ls-language-name">简</span></span></a></li>
+                                                    class="trp-ls-language-name">简</span></span></a>
+                                    </li>
                                 </ul>
                             </div> --}}
 
                             <div class="cell shrink slot-availability">
                                 <button type="button" class="wp-block-button__link" data-open="reveal-ibe">
                                     <span debug="twomacdonnellroaddirect">
-                                        Đặt phòng ngay</span>
+                                       {{booking_now}}</span>
                                 </button>
                             </div>
 
@@ -166,25 +182,27 @@
 
                         <ul id="fp-menu" class="menu slot-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a
-                                    href="/room">Phòng</a></li>
+                                    href="/room">{{room}}</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a
-                                    href="/dining">Ẩm thực</a></li>
+                                    href="/dining">{{food}}</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a
-                                    href="/event">Sự kiện</a></li>
+                                    href="/event">{{event}}</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"><a
-                                    href="/offer">Khuyến mãi</a></li>                   
+                                    href="/offer">{{offer}}</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"><a
-                                    href="/contact">Liên hệ</a></li>
+                                    href="/contact">{{contact}}</a></li>
                         </ul>
                         {{!-- <ul id="menu-languages-1" class="menu slot-languages">
                             <li
                                 class="zh_HK trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-734">
                                 <a href="https://www.twomr.com.hk/tc/"><span data-no-translation><span
-                                            class="trp-ls-language-name">繁</span></span></a></li>
+                                            class="trp-ls-language-name">繁</span></span></a>
+                            </li>
                             <li
                                 class="zh_CN trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-902">
                                 <a href="https://www.twomr.com.hk/sc/"><span data-no-translation><span
-                                            class="trp-ls-language-name">简</span></span></a></li>
+                                            class="trp-ls-language-name">简</span></span></a>
+                            </li>
                         </ul> --}}
                     </div>
 
@@ -199,9 +217,10 @@
 
                         <div class="ibe-banner">
 
-                            <p>Đặt phòng tại khách sạn Luxtery, Đà Nẵng</p>
+                            {{!-- <p>Đặt phòng tại khách sạn Luxtery, Đà Nẵng</p> --}}
+                            <p>{{Booking}}</p>
                             <p class="is-excerpt">
-                                Một khu đô thị tôn nghiêm hòa quyện sự yên bình của Đà Nẵng, gần Trung tâm Thành Phố và tầm nhìn rộng mở ra Bãi Biển Mỹ Khê và thành phố mang đến cuộc sống bên bờ biển dễ tiếp cận cho những du khách sành điệu.
+                               {{Booking_details}}
                             </p>
 
                             {{!-- <div class="wp-block-buttons is-content-justification-center">
@@ -219,11 +238,11 @@
 
 
 
-                        <h2 class="has-text-align-center wp-block-heading">Khung cảnh đẹp nhất của thành phố</h2>
+                        <h2 class="has-text-align-center wp-block-heading">{{Beautiful_View}}</h2>
 
 
 
-                        <p class="has-text-align-center">Tái khám phá cuộc sống vốn dĩ phải có với cuộc sống đô thị-biển đẹp nhất giữa những con đường quanh co, tươi tốt của Đà Nẵng. Cho dù bạn đang chạy bộ buổi sáng trên bãi biển Mỹ Khê lấp lánh, hòa mình vào cuộc sống về đêm của Trung tâm Thành phố hay hòa mình cùng những người thân yêu và những người hàng xóm thân thiết tại Astra Sky Lounge của chúng tôi, bạn sẽ luôn thấy mình bị cuốn hút về Khách sạn Luxtery, nơi nghỉ dưỡng của bạn. nhà xa nhà.</p>
+                        <p class="has-text-align-center">{{Beautiful_View_describe}}</p>
 
 
 
@@ -246,31 +265,28 @@
 
                         <div class="wp-block-client-pillars pillars">
                             <figure class="block-image"><img decoding="async" width="1600" height="1067"
-                                    src="img/imgview/imgview1.jpg" alt="Urban Sanctuary"
-                                    class="wp-image-311"
+                                    src="img/imgview/imgview1.jpg" alt="Urban Sanctuary" class="wp-image-311"
                                     srcset="img/imgview/imgview1_1600.jpg 1600w, img/imgview/imgview1_720.jpg 720w, img/imgview/imgview1_768.jpg 768w, img/imgview/imgview1_1536.jpg 1536w"
                                     sizes="(max-width: 1600px) 100vw, 1600px">
                                 <figcaption class="block-content">
-                                    <h3>Điều tuyệt vời nhất của cả hai thế giới</h3>
-                                    <p>Các phòng được bài trí trang nhã với tầm nhìn ngoạn mục ra đường chân trời và bãi biển nổi tiếng của Đà Nẵng, nằm ở trung tâm của mọi hoạt động</p>
+                                    <h3>{{img1title}}</h3>
+                                    <p>{{img1describe}}</p>
                                 </figcaption>
                             </figure>
 
                             <figure class="block-image"><img decoding="async" width="2400" height="1624"
-                                    src="img/imgview/imgview2.jpg" alt="Business Meets Lush"
-                                    class="wp-image-517"
+                                    src="img/imgview/imgview2.jpg" alt="Business Meets Lush" class="wp-image-517"
                                     srcset="img/imgview/imgview2_2400.jpg 2400w, img/imgview/imgview2_720.jpg 720w, img/imgview/imgview2_1600.jpg 1600w, img/imgview/imgview2_768.jpg 768w, img/imgview/imgview2_1536.jpg 1536w, img/imgview/imgview2_2048.jpg 2048w"
                                     sizes="(max-width: 2400px) 100vw, 2400px">
                                 <figcaption class="block-content">
-                                    <h3>Không gian giao lưu & hòa nhập</h3>
-                                    <p>Thư giãn với đồ uống hoặc bữa ăn bình thường, tổ chức các cuộc họp và sự kiện, tập thể dục hoặc đơn giản là thư giãn - tất cả trong một tòa nhà dành riêng cho đời sống xã hội sôi động
+                                    <h3>{{img2title}}</h3>
+                                    <p>{{img2describe}}
                                     </p>
                                 </figcaption>
                             </figure>
 
                             <figure class="block-image"><img decoding="async" loading="lazy" width="1600" height="1067"
-                                    src="img/imgview/imgview3.jpg" alt="Spaces to Mingle"
-                                    class="wp-image-328"
+                                    src="img/imgview/imgview3.jpg" alt="Spaces to Mingle" class="wp-image-328"
                                     srcset="img/imgview/imgview3_1600.jpg 1600w, img/imgview/imgview3_720.jpg 720w, img/imgview/imgview3_768.jpg 768w, img/imgview/imgview3_1536.jpg 1536w"
                                     sizes="(max-width: 1600px) 100vw, 1600px">
                                 <figcaption class="block-content">
@@ -285,11 +301,12 @@
 
 
 
-                        <h2 class="has-text-align-center wp-block-heading">Phòng của chúng tôi</h2>
+                        <h2 class="has-text-align-center wp-block-heading">{{our_room}}</h2>
 
 
 
-                        {{!-- <p class="has-text-align-center">Reside in our unique, serviced apartment-style accommodations,
+                        {{!-- <p class="has-text-align-center">Reside in our unique, serviced apartment-style
+                            accommodations,
                             each offering unfettered views of the city skyline, well-equipped with an open kitchen and
                             the basic amenities for hassle-free living.</p> --}}
 
@@ -321,7 +338,8 @@
 
                                 <p class="room-area">336ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/garden-skyline-room/">Phòng Grand Suite</a></p>
+                                        href="https://www.twomr.com.hk/suites/garden-skyline-room/">Phòng Grand
+                                        Suite</a></p>
 
                                 <p class="room-view">City/garden view</p>
                                 <ul class="card-actions">
@@ -350,7 +368,8 @@
 
                                 <p class="room-area">470ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/standard-superior-suite/">Phòng Grand Family</a></p>
+                                        href="https://www.twomr.com.hk/suites/standard-superior-suite/">Phòng Grand
+                                        Family</a></p>
 
                                 <p class="room-view">City view</p>
                                 <ul class="card-actions">
@@ -378,7 +397,8 @@
 
                                 <p class="room-area">560ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/garden-skyline-suite/">Phòng Deluxe Twin</a></p>
+                                        href="https://www.twomr.com.hk/suites/garden-skyline-suite/">Phòng Deluxe
+                                        Twin</a></p>
 
                                 <p class="room-view">City/garden view</p>
                                 <ul class="card-actions">
@@ -407,7 +427,8 @@
 
                                 <p class="room-area">650ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/garden-deluxe-skyline-deluxe-suite/">Phòng Deluxe Double</a></p>
+                                        href="https://www.twomr.com.hk/suites/garden-deluxe-skyline-deluxe-suite/">Phòng
+                                        Deluxe Double</a></p>
 
                                 <p class="room-view">City/garden view</p>
                                 <ul class="card-actions">
@@ -436,7 +457,8 @@
 
                                 <p class="room-area">750ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/garden-skyline-apartment/">Phòng Luxtery Suite</a></p>
+                                        href="https://www.twomr.com.hk/suites/garden-skyline-apartment/">Phòng Luxtery
+                                        Suite</a></p>
 
                                 <p class="room-view">City/garden view</p>
                                 <ul class="card-actions">
@@ -461,7 +483,8 @@
 
                                 <p class="room-area">750ft²</p>
                                 <p class="card-title"><a
-                                        href="https://www.twomr.com.hk/suites/garden-skyline-apartment/">Phòng President Suite</a></p>
+                                        href="https://www.twomr.com.hk/suites/garden-skyline-apartment/">Phòng President
+                                        Suite</a></p>
 
                                 <p class="room-view">City/garden view</p>
                                 <ul class="card-actions">
@@ -479,11 +502,12 @@
 
 
 
-                <p class="has-text-align-center">Khu vực chung, thậm chí cả hồ bơi trên sân thượng của chúng tôi -  đều có thể là không gian phòng khách và phòng ăn, văn phòng và phòng làm việc mở rộng của bạn, sau một ngày tuyệt vời khám phá và dù lịch bận rộn cùng gia đình và bạn bè </p>
+                <p class="has-text-align-center">{{AstraCoffee}} </p>
 
 
 
-                {{!-- <p class="has-text-align-center"><a href="https://www.twomr.com.hk/facilities/">View all services and
+                {{!-- <p class="has-text-align-center"><a href="https://www.twomr.com.hk/facilities/">View all services
+                        and
                         facilities</a></p> --}}
 
 
@@ -542,7 +566,10 @@
                         <p><a href="#">Xem thêm thông tin</a></p>
                     </div>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.900563616159!2d108.23320767508903!3d16.070648984609086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421829b09bb4f1%3A0x45b356df44712eaf!2zMTM2IFBo4bqhbSBWxINuIMSQ4buTbmcsIEFuIEjhuqNpIELhuq9jLCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1694353131402!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.900563616159!2d108.23320767508903!3d16.070648984609086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421829b09bb4f1%3A0x45b356df44712eaf!2zMTM2IFBo4bqhbSBWxINuIMSQ4buTbmcsIEFuIEjhuqNpIELhuq9jLCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1694353131402!5m2!1sen!2s"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     {{!-- <figure class="wp-block-media-text__media"><img decoding="async" loading="lazy" width="800"
                             height="600" src="img/mapexport.jpg.webp" alt class="wp-image-584 size-full"
                             srcset="img/mapexport.jpg.webp 800w, img/mapexport-720x540.jpg.webp 720w, img/mapexport-768x576.jpg.webp 768w"
@@ -552,7 +579,8 @@
 
                 <div class="wp-block-client-reviews">
                     <h2 class="block-title">Lắng nghe ý kiến từ khách của Luxtery</h2>
-                    <p class="block-content has-text-align-center">Khám phá điều gì khiến khách hàng của chúng tôi quay trở lại Khách sạn Luxtery trong những năm qua.</p>
+                    <p class="block-content has-text-align-center">Khám phá điều gì khiến khách hàng của chúng tôi quay
+                        trở lại Khách sạn Luxtery trong những năm qua.</p>
                     <div class="grid-x grid-margin-x">
                         <div class="cell large-10 large-offset-1 is-light-bg slot-review" data-slick="{"
                             arrows ": false}">
@@ -571,7 +599,7 @@
                                     <p></p>
                                 </div>
                             </div>
-                            
+
                             <div data-no-translation>
                                 <div class="card-review">
                                     <p class="slot-score">5/5</p>
@@ -637,11 +665,13 @@
             <li
                 class="zh_HK trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-734">
                 <a href="https://www.twomr.com.hk/tc/"><span data-no-translation><span
-                            class="trp-ls-language-name">Vi</span></span></a></li>
+                            class="trp-ls-language-name">Vi</span></span></a>
+            </li>
             <li
                 class="zh_CN trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-902">
                 <a href="https://www.twomr.com.hk/sc/"><span data-no-translation><span
-                            class="trp-ls-language-name">En</span></span></a></li>
+                            class="trp-ls-language-name">En</span></span></a>
+            </li>
         </ul>
 
         <div class="off-canvas-widget">
