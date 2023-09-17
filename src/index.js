@@ -4,7 +4,6 @@ const hbs = require('express-handlebars');
 const path = require('path');
 const port = 3000;
 const i18n = require('i18n');
-
 const cookieParser = require('cookie-parser'); // Thêm middleware để xử lý cookie
 // Sử dụng middleware cookie-parser để xử lý cookie
 app.use(cookieParser());
@@ -68,33 +67,43 @@ app.get('/', function (req, res) {
 
 
 app.get('/intro', function (req, res) {
-    res.render('intro');
+    const translations=res.locals.translations;
+    res.render('intro', translations);
 });
 app.get('/room', function (req, res) {
-    res.render('room');
+    const translations=res.locals.translations;
+    res.render('room', translations);
 });
 app.get('/event', function (req, res) {
     const eventName = req.query.e;
+    const translations=res.locals.translations;
     if (eventName == 'astra') {
-        res.render('astra');
+        res.render('astra', translations);
     } else if (eventName == 'meeting') {
-        res.render('meeting');
+        res.render('meeting', translations);
     }
     else if (eventName == 'ownway') {
-        res.render('ownway');
+        res.render('ownway', translations);
     } else {
-        res.render('event');
+        res.render('event', translations);
     }
 
 });
 app.get('/dining', function (req, res) {
-    res.render('dining');
+    const translations=res.locals.translations;
+    res.render('dining', translations);
 });
 app.get('/reviews', function (req, res) {
-    res.render('reviews');
+    const translations=res.locals.translations;
+    res.render('reviews', translations);
 })
 app.get('/facilities', function (req, res) {
-    res.render('facilities')
+    const translations=res.locals.translations;
+    res.render('facilities', translations)
+})
+app.get('/contact', function(req,res){
+    const translations=res.locals.translations;
+    res.render('contact', translations);
 })
 // Xử lý yêu cầu thay đổi ngôn ngữ
 app.use('/change-lang/:lang', (req, res) => {
@@ -102,9 +111,7 @@ app.use('/change-lang/:lang', (req, res) => {
     res.redirect('back');
 });
 
-app.get('/contact', function(req,res){
-    res.render('contact');
-})
+
 
 app.listen(port, () => {
     console.log(`
