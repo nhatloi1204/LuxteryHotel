@@ -92,10 +92,10 @@ app.get('/dining', function (req, res) {
 });
 app.get('/reviews', function (req, res) {
     res.render('reviews');
-})
+});
 app.get('/facilities', function (req, res) {
     res.render('facilities')
-})
+});
 // Xử lý yêu cầu thay đổi ngôn ngữ
 app.use('/change-lang/:lang', (req, res) => {
     res.cookie('lang', req.params.lang, { maxAge: 900000 });
@@ -104,7 +104,15 @@ app.use('/change-lang/:lang', (req, res) => {
 
 app.get('/contact', function(req,res){
     res.render('contact');
-})
+});
+
+app.get('/offer', function(req,res){
+    const offerName = req.query.e;
+    if (offerName == "offer_2") {
+        res.render('offer_2');
+    }
+    else res.render('offer_1');
+});
 
 app.listen(port, () => {
     console.log(`
