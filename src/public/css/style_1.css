@@ -10515,7 +10515,7 @@ h6 {
 }
 
 #firework1 .explosion::before {
-    animation: explosion 2s ease-in-out infinite;
+    animation: explosion 3s ease-in-out infinite;
 }
 
 #firework2 {
@@ -10525,7 +10525,7 @@ h6 {
 }
 
 #firework2 .explosion::before {
-    animation: explosion 2s 0.6s ease-in-out infinite;
+    animation: explosion 3s 0.6s ease-in-out infinite;
 }
 
 #firework3 {
@@ -10535,5 +10535,5 @@ h6 {
 }
 
 #firework3 .explosion::before {
-    animation: explosion 2s 0.4s ease-in-out infinite;
+    animation: explosion 3s 0.4s ease-in-out infinite;
 }

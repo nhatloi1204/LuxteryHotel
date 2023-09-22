@@ -38,13 +38,15 @@ window.addEventListener('scroll', function () {
 
     if (rect.top <= window.innerHeight && !fireworkSection.classList.contains('firework-triggered')) {
         fireworkSection.classList.add('firework-triggered');
-        fireworkSection.appendChild(fireworkEffect1);
-        fireworkSection.appendChild(fireworkEffect2);
-        fireworkSection.appendChild(fireworkEffect3);
+        setTimeout(function () {
+            fireworkSection.appendChild(fireworkEffect1);
+            fireworkSection.appendChild(fireworkEffect2);
+            fireworkSection.appendChild(fireworkEffect3);
+        }, 1000);
         setTimeout(function () {
             fireworkEffect1.remove();
             fireworkEffect2.remove();
             fireworkEffect3.remove();
-        }, 5000);
+        }, 9000);
     }
 });
