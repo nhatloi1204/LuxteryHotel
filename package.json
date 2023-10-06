@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "server": "node src/index.js",
+        "server": "nodemon --inspect src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/public/css/tailwind.css --watch"
     },
@@ -17,6 +17,7 @@
         "fs": "^0.0.1-security",
         "handlebars": "^4.7.8",
         "i18n": "^0.15.1",
+        "nodemon": "^3.0.1",
         "prettier": "^3.0.3"
     },
     "devDependencies": {
